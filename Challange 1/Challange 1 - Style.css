@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: rgba(118, 43, 189,0.6);
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #000;
+
+}
+.sign-in-up{
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color:#E0E0E0;
+    box-shadow: 2px 2px 10px #000;
+    transition: 0.5s;
+}
+.container{
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sign-in-up .container .sign-in,.sign-up{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.sign-in-up .container .sign-in .title,
+.sign-in-up .container .sign-up .title,
+.sign-in-up .container .sign-in .social-media,
+.sign-in-up .container .sign-up .social-media{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.sign-in-up .container .sign-in .title h1,
+.sign-in-up .container .sign-up .title h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #a4a4a4;
+    text-shadow: 3px 4px 1px rgb(0, 255, 166);
+}
+.sign-in-up .container .sign-in .social-media a,
+.sign-in-up .container .sign-up .social-media a{
+    text-decoration: none;
+    margin: 0px 20px;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 28px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  5px 5px 16px #bcbcbc,
+             -5px -5px 16px #ffffff;
+}
+.sign-in-up .container .sign-in .social-media a:hover ion-icon,
+.sign-in-up .container .sign-up .social-media a:hover ion-icon{
+    color: rgb(0, 140, 247);
+}
+.sign-in-up .container .sign-in .social-media a ion-icon,
+.sign-in-up .container .sign-up .social-media a ion-icon{
+    font-size: 1rem;
+    color: rgb(77, 74, 74);
+}
+.sign-in-up .container .sign-in .txt,
+.sign-in-up .container .sign-up-cap .cap,
+.sign-in-up .container .sign-in-cap .cap,
+.sign-in-up .container .sign-up .txt{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.sign-in-up .container .sign-in .txt p,
+.sign-in-up .container .sign-up .txt p{
+    color: gray;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 200;
+}
+.sign-in-up .container .sign-in .input,
+.sign-in-up .container .sign-up .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sign-in-up .container .sign-in input,
+.sign-in-up .container .sign-up input{
+    height: 50px;
+    width: 350px;
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 10px;
+    border-radius: 9px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  5px 5px 10px #a4a4a4,
+                 -5px -5px 10px #ffffff;
+}
+.sign-in-up .container .sign-in .btn,
+.sign-in-up .container .sign-up .btn{
+    text-align: center;
+    margin: 20px 10px;
+}
+.sign-in-up .container .sign-in .btn button,
+.sign-in-up .container .sign-up .btn button{
+    color: #fff;
+    padding: 20px 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 20px;
+    border-radius: 9px;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);    
+    box-shadow:  5px 5px 10px #a4a4a4,
+             -5px -5px 10px #ffffff;
+    transition: all 0.5s;
+}
+.sign-in-up .container .sign-in .btn button:hover,
+.sign-in-up .container .sign-up .btn button:hover{
+    color: #ff0000;
+    background: linear-gradient(180deg, #92FE9D 0%,  #00C9FF  100%);    
+
+}
+.sign-in-up .container .sign-up-cap .btn button{
+    color: #fff;
+    padding: 20px 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 20px;
+    border-radius: 9px;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    box-shadow: 2px 2px 2px rgb(101, 97, 97);  
+    transition: all 0.5s;  
+}
+.sign-in-up .container .sign-up-cap .btn button:hover{
+    color: #000000;
+}
+.sign-in-up .container .sign-up-cap{
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 10px 20px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    transition: 0.5s;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+.sign-in-up .container .sign-up-cap .title h1,
+.sign-in-up .container .sign-in-cap .title h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.sign-in-up .container .sign-up-cap .cap p,
+.sign-in-up .container .sign-in-cap .cap p{
+    color: rgb(77, 51, 51);
+    font-weight:200 ;
+}
+.sign-in-up .container .sign-up-cap .btn,
+.sign-in-up .container .sign-in-cap .btn{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sign-in-up .container .sign-up-cap .cap #cap-after,
+.sign-in-up .container .sign-up-cap .title #title-after{
+    display: none;
+}
+.sign-in-up .container .sign-up-cap .cap #cap-after.show,
+.sign-in-up .container .sign-up-cap .title #title-after.show{
+    display: block;
+}
+.sign-in-up .container .sign-up-cap .cap #cap-before,
+.sign-in-up .container .sign-up-cap .title #title-before{
+    display: block;
+}
+.sign-in-up .container .sign-up-cap .cap #cap-before.close,
+.sign-in-up .container .sign-up-cap .title #title-before.close{
+    display: none;
+}
+.sign-in-up .container .sign-up-cap .btn .Sign.active{
+   color: red;
+}
+
+.sign-in-up .container .sign-in.close{
+    display: none;
+}
+.sign-in-up .container .sign-up{
+    display: none;
+}
+.sign-in-up .container .sign-up.show{
+    display: block;
+}
+.sign-in-up .container .sign-up-cap .btn .SignIn{
+    display: none;
+}

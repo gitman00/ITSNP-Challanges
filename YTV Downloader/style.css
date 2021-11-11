@@ -15,6 +15,7 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: #cc0000;
     justify-content: space-between;
 }
 
@@ -28,7 +29,9 @@ section header {
     align-items: center;
     justify-content: space-between;
     /* background:rgb(194, 193, 193) ; */
-    box-shadow: 2px 2px 10px #000;
+    background: #cc0000;
+    box-shadow:  9px 9px 9px #6c0000,
+             -9px -9px 9px #ff0000;
 }
 
 section header .logo, 
@@ -39,7 +42,7 @@ section header nav {
 }
 section header .logo a, 
 section header .logo a ion-icon {
-    color: red;
+    color: #fff;
     font-size: 1.5rem;
     font-family: sans-serif;
     text-decoration: none;
@@ -49,27 +52,70 @@ section header nav a {
     color: #000;
     font-family: sans-serif;
     margin-left: 20px;
+    padding: 10px 20px;
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.5s;
 }
+section header nav a.btn {
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 900;
+    background: #cc0000;
+    box-shadow:  9px 9px 9px #6c0000,
+                 -9px -9px 9px #ff0000;    
+}
 section header nav a:hover {
-    color: red;
+    color: #fff;
 }
 
 /*----------------------- body of the website ---------------------- */
-section main {
-    position: relative;
-    left: 0;
-    top: 0;
+section main .Downloader {
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
 }
+section main .Downloader .path {
+    padding:20px 50px;
+    display: flex;
+    transition: 0.5s;
+    border-radius: 26px;
+    background: #cc0000;
+    box-shadow:  9px 9px 9px #6c0000,
+                 -9px -9px 9px #ff0000;
+}
+section main .Downloader .path input,
+section main .Downloader .path button 
+ {
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    transition: 0.5s;
+    border-radius: 2px;
+    background: #ffffff;
+    box-shadow:  9px 9px 15px #6c0000,
+                 -9px -9px 15px #ff0000;
+}
+section main .Downloader .path button {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 5px;
+    background: red;
+}
 
+section main .Downloader .path button:hover,
+section header nav a.btn:hover {
+    color: rgb(255, 0, 0);
+    background: #fff;
+}
+#weava-permanent-marker,
+#weava-ui-wrapper {
+    display: none;
+}
 
 /*----------------------- footer of the website ---------------------- */
 
@@ -79,10 +125,33 @@ section footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 2px 10px #000;
+    border-radius: 26px;
+    background: #cc0000;
+    box-shadow:  9px 9px 9px #6c0000,
+                 -9px -9px 9px #ff0000;
 }
 
+section footer .copyright p {
+    color: #fff;
 
+    transition: 0.5s;
+    font-family: 'Times New Roman', Times, serif;
+}
+section footer .copyright p a {
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none; 
+    transition: 0.5s;
+    background: red;
+    box-shadow:  9px 9px 20px #6c0000,
+                 -9px -9px 20px #ff0000; 
+}
+
+section footer .copyright p a:hover {
+    color: rgb(255, 0, 0);
+    background: #fff;
+}
 
 
 
@@ -100,7 +169,7 @@ section footer {
     justify-content: center;
     background-size: cover;
     transition: none;
-    left: -100%;
+    left: -10000px;
     animation: loader 2s linear 1;
 }
 .preloader h1{
@@ -141,5 +210,39 @@ section footer {
     100%{
         left: 0%;
         display: none;
+    }
+}
+
+@media screen and (max-width:850px) {
+    section header {
+        transition: 0.5s;
+        padding: 20px 30px;
+    }
+    section header .logo, 
+    section header nav {
+        padding: 0px;
+    }
+    section header .logo a,
+    section header nav a.btn {
+        font-size: 0.8rem;
+        font-weight: 200;
+        text-align: center;
+    }
+    section main .Downloader .path {
+        padding: 20px;
+        flex-direction: column;
+        box-shadow: none;
+    }
+    
+    section main .Downloader .path input,
+    section main .Downloader .path button  {
+        margin: 20px 10px;
+    }
+    .preloader h1 {
+        font-size: 1rem;
+        transform: translate(125px, 380px);
+    }
+    section footer {
+        padding: 20px;
     }
 }

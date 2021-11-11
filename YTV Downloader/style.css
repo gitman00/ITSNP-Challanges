@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*----------------------- Header of the website ---------------------- */
+section {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section header {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 20px 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background:rgb(194, 193, 193) ; */
+    box-shadow: 2px 2px 10px #000;
+}
+
+section header .logo, 
+section header nav {
+    padding: 10px;
+    display: flex;
+    transition: 0.5s;
+}
+section header .logo a, 
+section header .logo a ion-icon {
+    color: red;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section header nav a {
+    color: #000;
+    font-family: sans-serif;
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+section header nav a:hover {
+    color: red;
+}
+
+/*----------------------- body of the website ---------------------- */
+section main {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+
+/*----------------------- footer of the website ---------------------- */
+
+section footer {
+    padding: 20px 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px #000;
+}
+
+
+
+
+
+
+
+/* --------------------------- PRE loader -------------------------- */
+.preloader {
+    background: url("Assets/youtube-loading-animation.gif");
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+    opacity: 0;
+    justify-content: center;
+    background-size: cover;
+    transition: none;
+    left: -100%;
+    animation: loader 2s linear 1;
+}
+.preloader h1{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transform: translate(610px, 430px);
+    animation: animate 2s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%{
+        color:rgb(0, 145, 255);
+    }
+    50%{
+        color:#fff;
+    }
+    90%{
+        color:rgb(0, 145, 255);
+    }
+    100%{
+        color:rgb(0, 145, 255);
+    }
+}
+@keyframes loader {
+    0%{
+        left: 0%;
+        opacity: 1;
+    }
+    50%{
+        left: 0%;
+        opacity: 1;
+    }
+    90%{
+        left: 0%;
+        opacity: 1;
+    }
+    100%{
+        left: 0%;
+        display: none;
+    }
+}

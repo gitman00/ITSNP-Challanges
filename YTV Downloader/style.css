@@ -15,7 +15,7 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #cc0000;
+    background: #e0e0e0;
     justify-content: space-between;
 }
 
@@ -29,9 +29,9 @@ section header {
     align-items: center;
     justify-content: space-between;
     /* background:rgb(194, 193, 193) ; */
-    background: #cc0000;
-    box-shadow:  9px 9px 9px #6c0000,
-             -9px -9px 9px #ff0000;
+    background: #e0e0e0;
+    box-shadow:  10px 10px 20px #8b8b8b,
+             -10px -10px 20px #ffffff;
 }
 
 section header .logo, 
@@ -42,7 +42,7 @@ section header nav {
 }
 section header .logo a, 
 section header .logo a ion-icon {
-    color: #fff;
+   color: red;
     font-size: 1.5rem;
     font-family: sans-serif;
     text-decoration: none;
@@ -59,14 +59,14 @@ section header nav a {
 }
 section header nav a.btn {
     border-radius: 20px;
-    color: #fff;
+   color: red;
     font-weight: 900;
-    background: #cc0000;
-    box-shadow:  9px 9px 9px #6c0000,
-                 -9px -9px 9px #ff0000;    
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  10px 10px 20px #8b8b8b,
+             -10px -10px 20px #ffffff;    
 }
 section header nav a:hover {
-    color: #fff;
+   color: red;
 }
 
 /*----------------------- body of the website ---------------------- */
@@ -82,22 +82,23 @@ section main .Downloader .path {
     display: flex;
     transition: 0.5s;
     border-radius: 26px;
-    background: #cc0000;
-    box-shadow:  9px 9px 9px #6c0000,
-                 -9px -9px 9px #ff0000;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  10px 10px 20px #8b8b8b,
+             -10px -10px 20px #ffffff;
 }
 section main .Downloader .path input,
 section main .Downloader .path button 
  {
+    color: #000;
     padding: 10px;
     border: none;
     outline: none;
     margin: 10px;
     transition: 0.5s;
     border-radius: 2px;
-    background: #ffffff;
-    box-shadow:  9px 9px 15px #6c0000,
-                 -9px -9px 15px #ff0000;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  10px 10px 20px #8b8b8b,
+             -10px -10px 20px #ffffff;
 }
 section main .Downloader .path button {
     color: rgb(255, 255, 255);
@@ -113,7 +114,8 @@ section header nav a.btn:hover {
     background: #fff;
 }
 #weava-permanent-marker,
-#weava-ui-wrapper {
+#weava-ui-wrapper,
+#as_select_wrapper {
     display: none;
 }
 
@@ -126,26 +128,24 @@ section footer {
     align-items: center;
     justify-content: center;
     border-radius: 26px;
-    background: #cc0000;
-    box-shadow:  9px 9px 9px #6c0000,
-                 -9px -9px 9px #ff0000;
+    background: #ccc;
+    box-shadow:  9px 9px 9px #aaa,
+                 -9px -9px 9px #fff;
 }
 
 section footer .copyright p {
-    color: #fff;
-
     transition: 0.5s;
     font-family: 'Times New Roman', Times, serif;
 }
 section footer .copyright p a {
-    color: #fff;
+   color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 5px;
     text-decoration: none; 
     transition: 0.5s;
     background: red;
-    box-shadow:  9px 9px 20px #6c0000,
-                 -9px -9px 20px #ff0000; 
+    box-shadow:  9px 9px 20px #aaa,
+                 -9px -9px 20px #fff; 
 }
 
 section footer .copyright p a:hover {
@@ -173,7 +173,7 @@ section footer .copyright p a:hover {
     animation: loader 2s linear 1;
 }
 .preloader h1{
-    color: #fff;
+   color: red;
     font-size: 1.5rem;
     font-weight: 900;
     transform: translate(610px, 430px);
@@ -240,7 +240,7 @@ section footer .copyright p a:hover {
     }
     .preloader h1 {
         font-size: 1rem;
-        transform: translate(125px, 380px);
+        transform: translate(170px, 380px);
     }
     section footer {
         padding: 20px;

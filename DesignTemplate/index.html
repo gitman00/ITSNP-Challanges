@@ -14,12 +14,12 @@
         </head>
 
         <div class="question">
-            <h4>What is your NAme ?</h4>
+            <h4>What is your Name ?</h4>
         </div>
 
         <div class="time">
-            <p>
-                00:04
+            <p id="time" onload="countDown();">
+                4
             </p>
         </div>
 
@@ -28,20 +28,20 @@
                 <div class="row">
                     <ul>
                         <li>
-                            <a href="">A</a>
+                            <a href=""> Answer</a>
                         </li>
                         <li>
-                            <a href="">B</a>
+                            <a href=""> Answer</a>
                         </li>
                     </ul>
                 </div>
                 <div class="row">
                     <ul>
                         <li>
-                            <a href="">C</a>
+                            <a href=""> Answer</a>
                         </li>
                         <li>
-                            <a href="">D</a>
+                            <a href=""> Answer</a>
                         </li>
                     </ul>
                 </div>
@@ -49,4 +49,11 @@
         </main>
     </section>
 </body>
+    <script>
+        countDown = () => {
+            setTimeout( () => {
+                time.innerHTML = "1";
+            }, 1000)
+        }
+    </script>
 </html>
